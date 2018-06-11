@@ -1,0 +1,14 @@
+<view>
+
+  <view bindtap='onTapDiary' data-item='{{item}}' data-index="{{index}}" wx:for="{{diaries}}" wx:key="" class='diary'>
+    <text>{{item.content}}</text>
+    <view class='date'>
+      <text >{{item.date}}</text>
+    </view>
+  </view>
+
+</view>
+
+<view>
+  <button bindtap='onTapNew'>新建</button>
+</view>
